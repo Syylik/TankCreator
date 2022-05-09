@@ -35,6 +35,33 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MousePos"",
+                    ""type"": ""Value"",
+                    ""id"": ""fb2e3c8d-f667-4c88-9265-fdb11ab6586e"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Press"",
+                    ""type"": ""Button"",
+                    ""id"": ""a080bda8-bcec-4f39-a1dc-df0844ecaf47"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GarageZoom"",
+                    ""type"": ""Value"",
+                    ""id"": ""f51e5fbd-7f67-4f84-bd8c-e8a72c4b5d60"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -147,6 +174,149 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""87f27cff-8586-40c5-888e-ce5dd070ae42"",
+                    ""path"": ""<Touchscreen>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mobile"",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Mouse"",
+                    ""id"": ""4ac3e8e6-7889-46dc-96f4-73d19572bc82"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""867857b9-91c8-4996-a082-e9ca52159b54"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""73d2384b-c0aa-4fe6-850c-36a1e751398f"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""4bdf4d47-eca1-4ba4-93d8-e0bd5b27c744"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""661d889f-ba4e-4757-a8d8-6b785426ac45"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5802cf6a-7557-4da0-a959-ac85885d2c7b"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""MousePos"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d4f60a39-3c53-4e72-86aa-623eac086179"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""Press"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a42b6abf-2b7f-4019-8187-d3b6b862f200"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Press"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f31d3852-c883-45b6-af9e-4f11aee437a0"",
+                    ""path"": ""<Touchscreen>/touch0/tap"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mobile"",
+                    ""action"": ""Press"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cdc75586-1c7a-4017-af04-f8e79b84d3f5"",
+                    ""path"": ""<Pointer>/radius"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mobile"",
+                    ""action"": ""GarageZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3896e023-4406-4f84-a3dd-91bcde562abd"",
+                    ""path"": ""<Mouse>/scroll"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""GarageZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9b0d77a3-441d-4c31-a71a-cb1d5e9b1db5"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""GarageZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -178,12 +348,36 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""isOR"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Mobile"",
+            ""bindingGroup"": ""Mobile"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Touchscreen>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Pointer>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Sensor>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
         }
     ]
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
+        m_Player_MousePos = m_Player.FindAction("MousePos", throwIfNotFound: true);
+        m_Player_Press = m_Player.FindAction("Press", throwIfNotFound: true);
+        m_Player_GarageZoom = m_Player.FindAction("GarageZoom", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -244,11 +438,17 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Movement;
+    private readonly InputAction m_Player_MousePos;
+    private readonly InputAction m_Player_Press;
+    private readonly InputAction m_Player_GarageZoom;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
         public PlayerActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
+        public InputAction @MousePos => m_Wrapper.m_Player_MousePos;
+        public InputAction @Press => m_Wrapper.m_Player_Press;
+        public InputAction @GarageZoom => m_Wrapper.m_Player_GarageZoom;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -261,6 +461,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
+                @MousePos.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMousePos;
+                @MousePos.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMousePos;
+                @MousePos.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMousePos;
+                @Press.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPress;
+                @Press.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPress;
+                @Press.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPress;
+                @GarageZoom.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGarageZoom;
+                @GarageZoom.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGarageZoom;
+                @GarageZoom.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGarageZoom;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -268,6 +477,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @MousePos.started += instance.OnMousePos;
+                @MousePos.performed += instance.OnMousePos;
+                @MousePos.canceled += instance.OnMousePos;
+                @Press.started += instance.OnPress;
+                @Press.performed += instance.OnPress;
+                @Press.canceled += instance.OnPress;
+                @GarageZoom.started += instance.OnGarageZoom;
+                @GarageZoom.performed += instance.OnGarageZoom;
+                @GarageZoom.canceled += instance.OnGarageZoom;
             }
         }
     }
@@ -290,8 +508,20 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_GamepadSchemeIndex];
         }
     }
+    private int m_MobileSchemeIndex = -1;
+    public InputControlScheme MobileScheme
+    {
+        get
+        {
+            if (m_MobileSchemeIndex == -1) m_MobileSchemeIndex = asset.FindControlSchemeIndex("Mobile");
+            return asset.controlSchemes[m_MobileSchemeIndex];
+        }
+    }
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnMousePos(InputAction.CallbackContext context);
+        void OnPress(InputAction.CallbackContext context);
+        void OnGarageZoom(InputAction.CallbackContext context);
     }
 }
